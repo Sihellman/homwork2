@@ -3,6 +3,8 @@ import static org.junit.Assert.*;
 
 import edu.htc.blitstein.caih313.tddstack.IStackable;
 import edu.htc.blitstein.caih313.tddstack.resource.campus.Faculty;
+import edu.htc.blitstein.caih313.tddstack.resource.campus.Student;
+import edu.htc.blitstein.caih313.tddstack.resource.room.ComputerLab;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
