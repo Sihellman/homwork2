@@ -22,7 +22,7 @@ public class TddStack {
     public void push(IStackable obj){
 
     }
-    IStackable pop(){
+    public IStackable pop(){
         return null;
 
     }
