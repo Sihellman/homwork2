@@ -40,7 +40,7 @@ public class TddStackTest {
     @Test
     public void testNewStackIsFull(){
         TddStack objresult = new TddStack();
-        assertTrue(objresult.isFull());
+        assertFalse(objresult.isFull());
 
     }
     @Test
@@ -51,6 +51,11 @@ public class TddStackTest {
         tddStack.push(iStackableOrig);
         IStackable iStackablePopped = tddStack.pop();
         assertEquals(iStackableOrig, iStackablePopped);
+    }
+    @Test
+    public void testPopEmpty(){
+        TddStack tddStack = new TddStack();
+        assertNull(tddStack.pop());
     }
     @Test
     public void testPushEmpty(){

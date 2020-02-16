@@ -12,7 +12,7 @@ public class TddStack {
 
     }
     public boolean isEmpty(){
-        return false;
+        return true;
 
     }
     public boolean isFull(){
