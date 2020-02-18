@@ -32,6 +32,8 @@ public class TddStackTest {
         assertEquals(expected, result, 0.001);
 
     }
+
+
     @Test
     public void testNewStackIsEmpty() {
         TddStack tddStack = new TddStack();
@@ -43,15 +45,8 @@ public class TddStackTest {
         assertFalse(objresult.isFull());
 
     }
-    @Test
-    public void testPopIsPush() {
-        TddStack tddStack = new TddStack();
-        //Faculty implements IStackable
-        IStackable iStackableOrig = new Faculty();
-        tddStack.push(iStackableOrig);
-        IStackable iStackablePopped = tddStack.pop();
-        assertEquals(iStackableOrig, iStackablePopped);
-    }
+
+
     @Test
     public void testPopEmpty(){
         TddStack tddStack = new TddStack();
@@ -72,6 +67,7 @@ public class TddStackTest {
         objresult.push(obj2);
         objresult.push(obj3);
         assertTrue(objresult.isFull());
+        assertFalse(objresult.isEmpty());
 
 
     }
